@@ -1,0 +1,356 @@
+
+
+@font-face {
+	font-family: "Poppins-Regular";
+    font-weight: 400;
+  	src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Poppins-Bold";
+    font-weight: 700;
+  	src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+
+@font-face {
+    font-family: "Jost-Regular";
+    font-weight: 400;
+    src: url("../assets/fonts/Jost/Jost-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Jost-Bold";
+    font-weight: 700;
+    src: url("../assets/fonts/Jost/Jost-Bold.ttf");
+}
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .ta-center {
+    text-align: center;
+  }
+  
+  .yellow {
+    color: #f2bd00;
+  }
+  
+  * {
+    box-sizing: border-box;
+
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  :root {
+    --highlight-color: #2000e7;
+    --section-baground-first: #43bafd0f;
+    --section-baground-second: #ffd69633;
+    --shadow-color: #00000040;
+    --pink: #F965FC;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--highlight-color);
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .container {
+    width: 94rem;
+    margin: 0 auto;
+    padding-left: 4rem;
+  }
+  
+  section {
+    margin: 12rem 0;
+  }
+  
+  .container_header {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+  }
+  
+  .logo {
+    color: #0e0578;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+    text-decoration: none;
+  }
+  
+  .main-menu {
+    color: #686565;
+    font-size: 2rem;
+    line-height: 3rem;
+    gap: 5rem;
+    margin-right: 3rem;
+  }
+  
+  .main-menu__item,
+  .nav__item {
+    list-style-type: none;
+  }
+  
+  .main-menu__link,
+  .nav__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .container_me {
+    gap: 6rem;
+  }
+  
+  .my-photo {
+    width: 564px;
+    height: 564px;
+    margin-right: 50px;
+
+  }
+  
+  .container_about {
+    width: 92rem;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .about__info {
+    width: 30%;
+  }
+  
+  .about__text {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  .info__greeting {
+    color: var(--highlight-color);
+    font-size: 1.875rem;
+    line-height: 45px;
+  }
+  
+  .info__main {
+    margin: 1.25rem 7rem 4rem 0;
+    font-size: 24px;
+  }
+  
+  .button {
+    width: 15.375rem;
+    height: 4.5rem;
+    border: 2px solid var(--highlight-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    box-shadow: 11px 21px 15px 6px var(--shadow-color);
+  }
+  
+  .button:hover {
+    cursor: pointer;
+  }
+  
+  .button-hire {
+    background-color: var(--highlight-color);
+    color: white;
+  }
+  
+  .button-project {
+    color: var(--highlight-color);
+    margin-left: 5rem;
+  }
+  
+  .about__header {
+    letter-spacing: 0.35em;
+    margin-bottom: 50px;
+  
+  }
+  
+  .my-projects {
+    background-color: var(--section-baground-second);
+  }
+  
+  .container_my-projects {
+    width: 81rem;
+  }
+  
+  .my-projects__header {
+    letter-spacing: 0.2em;
+  }
+  
+  .projects {
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 2rem 6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  .contacts {
+    background-color: var(--section-baground-first);
+  }
+
+  .foto3 {
+    float: right;
+  }
+  
+  .contacts__header {
+    font-size: 4rem;
+    line-height: 6rem;
+    letter-spacing: 0.27em;
+  }
+  
+  .contacts__input,
+  .contacts__textarea {
+    background-color: white;
+    font-size: 2rem;
+    width: 40.8125rem;
+    height: 6rem;
+    line-height: 6rem;
+    margin-bottom: 2.5rem;
+    border: none;
+    padding: 2rem;
+    box-shadow: 13px 21px 4px 0 var(--shadow-color);
+  }
+  
+  .contacts__textarea {
+    height: 16.5625rem;
+  }
+  
+  .contacts__input::placeholder,
+  .contacts__textarea::placeholder {
+    color: black;
+  }
+  
+  .contacts__button {
+    background-color: white;
+    box-shadow: 13px 21px 4px 0 var(--shadow-color);
+    border-radius: 0;
+    border: none;
+  }
+  
+  .container_contacts-form {
+    background-image: url("images/saly.png");
+    background-repeat: no-repeat;
+    background-position: 510px -20px;
+    padding: 9rem 0;
+  }
+  
+  .contacts-form {
+    text-align: center;
+  }
+  
+  .container_footer {
+    gap: 50px;
+    border-bottom: 2px solid black;
+    padding-top: 10rem;
+  }
+  
+  .logo_footer {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.35em;
+  }
+  
+  .nav_footer {
+    flex: 1;
+    justify-content: space-around;
+  }
+  
+  footer {
+    font-family: 'Jost', sans-serif;
+    background-color: #FFD69633;
+    
+  }
+  
+  .nav__item {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .nav__item_header {
+    font-weight: bold;
+  }
+  
+  .subscribe-form {
+    margin-left: -3rem;
+    margin-top: 2rem;
+  }
+  
+  .subscribe-form__input {
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    height: 6rem;
+    padding: 2rem;
+  }
+  
+  .subscribe-form__input {
+    color: white;
+  }
+  
+  .button_subscribe {
+    font-size: 2rem;
+    height: 6rem;
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 1.875rem;
+    margin-left: -6rem;
+    width: 15.375rem;
+    line-height: 2.25rem;
+  }
+  
+  .extra-info {
+    width: 97rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  
+  
+  
+  .item_1 {
+    padding-top: 60px; 
+    padding-left: 40px;
+
+     list-style: none;
+
+  }
+  
+  .item_2 {
+    padding-top: 38px;
+    padding-left: 40px;
+    list-style: none;
+  }
+  
+  .item_3 {
+    padding-top: 57px;
+    padding-left: 40px;
+     list-style: none;
+  }
+  
+  .item_4 {
+    padding-top: 40px;
+    padding-left: 40px;
+     list-style: none;
+  }
+  
+  .about-image {
+      width: 925px;
+      height: 925px;
+      flex-shrink: 0;
+      float: right;
+  }
